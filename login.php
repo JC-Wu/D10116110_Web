@@ -1,9 +1,9 @@
 ﻿<html>
 <?php
-//require "c:/etc/config.php";
+require_once "config.php";
 	$id=$_POST['id'];
 	$passwd=$_POST['passwd'];
-	$conn=mysql_connect('localhost','root','takming');
+	$conn=mysql_connect($dbServer,$dbUser,$dbPw);
 	mysql_select_db('d10116110');
 	$sql="select * from user_profile where id='{$id}'";
 	$res=mysql_query($sql) or die("Can't find data");
