@@ -12,10 +12,10 @@ require "c:/etc/config.php";
 	{
 		if (md5($passwd)==$row['passwd'])
 		{
-			loginSuccess=true;
+			$loginSuccess=true;
 		}
 	}
-	if(loginSuccess)
+	if($loginSuccess)
 	{
 		echo "登入成功！";
 	}
