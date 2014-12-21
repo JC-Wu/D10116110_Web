@@ -6,7 +6,7 @@
 <h2>登入畫面</h2>
 帳號:<input type="text" name="id"><p>
 密碼:<input type="password" name="passwd"><p>
-<input type="submit">&nbsp;<input type="reset">
+<input type="submit" name="登入">&nbsp;<input type="reset">
 </form>
 </center>
 </body>
